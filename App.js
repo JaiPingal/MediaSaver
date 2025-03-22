@@ -1,24 +1,14 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import RootStack from './src/navigation/RootStack';
 
 const App = () => {
   return (
-    <View style={styles.root}>
-      <Text style={styles.text_style}>MediaSaver</Text>
-    </View>
+    <NavigationContainer>
+      <RootStack />
+    </NavigationContainer>
   );
 };
 
 export default App;
 
-const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text_style: {
-    fontSize: 25,
-    color: '#000',
-  },
-});
