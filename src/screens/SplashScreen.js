@@ -8,7 +8,7 @@ const SplashScreen = () => {
   return (
     <View style={styles.root}>
       <Text style={styles.text_style}>Media Saver</Text>
-      <Button onPress={() => navigation.navigate('Home')}>Go to Home</Button>
+      <Button onPress={() => navigation.navigate('Tabs')}>Go to Home</Button>
     </View>
   );
 };
